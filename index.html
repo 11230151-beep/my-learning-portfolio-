@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的個人名片 - lit.link 風格</title>
+    <style>
+        /* 整體背景設定 */
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Arial, "Microsoft JhengHei", sans-serif;
+    
+    /* 這裡換成淡粉色 */
+    background-color: #f6b9d1; 
+    
+    /* 如果你想要一點點漸層感，可以用下面這行取代上面那行 */
+    /* background: linear-gradient(180deg, #fff0f6 0%, #fce4ec 100%); */
+
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+        /* 容器寬度限制 */
+        .container {
+            width: 100%;
+            max-width: 450px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* 頭像樣式 */
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* 標題與簡介 */
+        h1 {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .description {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        /* 連結按鈕區域 */
+        .links-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* 單個連結按鈕樣式 */
+        .link-item {
+            display: block;
+            padding: 15px;
+            background-color: white;
+            color: #333;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        /* 滑鼠移上去的效果 */
+        .link-item:hover {
+            transform: scale(1.02);
+            background-color: #f0f0f0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        /* 不同按鈕的自訂顏色（可選） */
+        .ig-link { border-left: 6px solid #E1306C; }
+        .dc-link { border-left: 6px solid #5865F2; }
+        .project-link { border-left: 6px solid #27ae60; }
+        
+
+        .footer {
+            margin-top: 50px;
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+
+        <h1>派大呱 / 庠</h1>
+        <p class="description">
+            南港高中 112-114 學年度<br>
+            自主學習：建立一個屬於自己的網站<br>
+            Python | CSS | AI輔助
+        </p>
+
+        <div class="links-wrapper">
+            
+            <a href="https://www.instagram.com/eden_.0109" target="_blank" class="link-item ig-link">
+                📸 Instagram
+            </a>
+
+            <a href="https://discordapp.com/users/quack._quack_" target="_blank" class="link-item dc-link">
+                💬 Discord
+            </a>
+
+            <a href="about.html" class="link-item project-link">
+                🚀 About Me
+            </a>
+
+             <a href="about2.html" class="link-item" style="border-left: 6px solid #ff85a1;">
+    📖 學習動機與心路歷程
+             </a>
+
+            <a href="https://11230151-beep.github.io/my-learning-portfolio-/" class="link-item">
+                📁 我的 GitHub 專案
+            </a>
+
+        </div>
+
+        <div class="footer">
+            &copy; 2026 數位名片存檔
+        </div>
+    </div>
+
+</body>
+</html>
